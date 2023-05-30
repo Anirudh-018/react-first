@@ -1,11 +1,11 @@
+import Todo from "./components/Todo";
+
 function App() {
   return <div>
     <h1>to do</h1>
-    <div className="card">
-      <h2> TITLE</h2>
-      <button>delete</button>
-    </div>
+    <Todo title='complete tasks'/>
+    <Todo title='go to gym'/>
   </div> ;
-}
+} 
 
 export default App;
