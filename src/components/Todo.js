@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "./Modal";
 import Backdrop from "./Backdrop";
+import Content from "./Content";
 function Todo(props) {
   //returns value and the state chane function
   const [showModal, setModalOpen] = useState(false);
@@ -15,7 +16,7 @@ function Todo(props) {
   }
   return (
     <div className="card">
-      <h2>{props.title}</h2>
+    <Content index={props.index}/>
       <div className="actions">
         <button className="btn" onClick={deleteHandler}>
           delete
