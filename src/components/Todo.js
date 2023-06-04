@@ -4,7 +4,8 @@ import Backdrop from "./Backdrop";
 function Todo(props) {
   //returns value and the state chane function
   const [showModal, setModalOpen] = useState(false);
-
+//   const ele=document.getElementById("demo");
+//   ele.remove();
   function deleteHandler() {
     setModalOpen(true);
   }
