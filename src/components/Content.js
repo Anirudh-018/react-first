@@ -1,10 +1,8 @@
 import { useState } from "react";
 import Time from "./Time";
-const content = [
-  { name: "complete tasks", time_limit: "time limit is 8 hrs" },
-  { name: "go to gym", time_limit: "time limit is 1.5 hrs" },
-];
+import { contents } from "../App";
 function Content(props) {
+  const content=contents;
   var val=parseInt(content[props.index].time_limit[14])
   const [hrs,setTime]=useState(val);
   function increaseTime(){
