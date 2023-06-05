@@ -71,3 +71,7 @@
     top: 0;
     left: 0;
   }
+  .time{
+    width: 30rem;
+    display:inline;
+  }
