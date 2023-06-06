@@ -25,17 +25,27 @@ function Todo(props) {
   function completeTask() {
     setComplete(true);
   }
+  function unDoTask(){
+    setComplete(false);
+  }
+  const divStyle = {
+    backgroundColor: complete ? 'green' : 'white',
+    transition: 'background-color 3s',
+  };
   return (
     <div>
       {showDiv ? (
         <div
           className="card"
-          style={{ backgroundColor: complete ? "green" : "white" }}
+          style={divStyle}
         >
           <Content index={props.index} />
           <div className="button-container">
-            <button className="btn" onClick={completeTask}>
+            <button className="btn container-item" onClick={completeTask}>
               completed
+            </button>
+            <button className="btn container-item" onClick={unDoTask}>
+              undo complete
             </button>
             <Deleter toggler={setShow} deleter={deleteHandler} />
           </div>
