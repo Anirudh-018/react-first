@@ -4,7 +4,7 @@ function Time(props) {
       <button className="btn" onClick={props.onIncrease}>
         -
       </button>
-      <p>{props.time}</p>
+      <p style={{paddingRight:15}}>{props.time}</p>
       <button className="btn" onClick={props.onDecrease}>
         +
       </button>
