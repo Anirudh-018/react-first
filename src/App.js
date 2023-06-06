@@ -40,7 +40,7 @@ function App() {
   }
   return (
     <div>
-      <h1>to do</h1>
+      <h1 style={{textAlign:"center"}}>To Do</h1>
       <input type="text" onChange={handleName} />
       <button className="btn" onClick={addName}>
         add task name
